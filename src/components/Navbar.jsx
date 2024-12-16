@@ -1,7 +1,7 @@
 import { useMovies } from "../context/MovieContext";
 
 export default function Navbar() {
-  const { query, setQuery, searchMovies } = useMovies();
+  const { query, setQuery, searchMoviesAndTVShows } = useMovies();
 
   const handleSearchChange = (e) => {
     setQuery(e.target.value);
@@ -9,7 +9,7 @@ export default function Navbar() {
 
   const handleSearchSubmit = (e) => {
     e.preventDefault();
-    searchMovies(query);
+    searchMoviesAndTVShows(query);
   };
 
   return (
