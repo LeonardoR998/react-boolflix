@@ -1,6 +1,5 @@
 import React, { createContext, useState, useContext } from "react";
 
-// Crea il contesto per i dati dei film e delle serie TV
 const MovieContext = createContext();
 
 // Componente provider che conterrà la logica per la ricerca dei film e delle serie TV
@@ -41,7 +40,7 @@ export const MovieProvider = ({ children }) => {
     }
   };
 
-  // Funzione per ottenere la URL della bandiera in base alla lingua
+  // Funzione per ottenere la URL della bandiera
   const getFlagUrl = (language) => {
     const flagCode = language.toLowerCase();
     return `https://flagcdn.com/w20/${flagCode}.png`;

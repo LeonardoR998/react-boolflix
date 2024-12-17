@@ -15,7 +15,7 @@ export default function Navbar() {
   return (
     <nav className="navbar bg-dark bg-gradient">
       <div className="container-fluid">
-        <a className="navbar-brand fs-1 text-danger">Boolflix</a>
+        <a className="navbar-brand fs-1 text-danger text-uppercase">Boolflix</a>
         <form onSubmit={handleSearchSubmit} className="d-flex" role="search">
           <input
             className="form-control me-2"
